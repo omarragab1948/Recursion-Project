@@ -10,31 +10,6 @@
   background-color: #fff4ea;
 }
 
-/* custom.css */
-[aria-checked="true"] [data-testid="flowbite-toggleswitch-toggle"] {
-    background-color: #FF8E29 !important;
-  }
-  [aria-checked="false"] [data-testid="flowbite-toggleswitch-toggle"] {
-    background-color: #6F757E !important;
-  }
-
-
-  [data-testid="flowbite-accordion-content"]{
-    padding: 10px;
-  }
-@media (min-width: 768px) {
-  .element::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    height: 75%;
-    width: 2px;
-    background-color: #E1E1E1;
-}
-}
-[fdprocessedid="67xjgf"]:hover{
-  background-color: #FF8E29 !important;
-  color: #fff;
+.css-d0uhtl {
+  margin-left: 0 !important;
 }

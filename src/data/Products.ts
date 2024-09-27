@@ -58,7 +58,7 @@ export const productsData: IProduct[] = [
           },
         ],
       },
-    ],
+    ]
   },
   {
     id: 2,
