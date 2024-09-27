@@ -1,4 +1,4 @@
-import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
+import { Box, Card, CardMedia,  Typography } from "@mui/material";
 import { ICategory, IProduct, IReply } from "../../types/product";
 
 interface ProductDetailsProps {
