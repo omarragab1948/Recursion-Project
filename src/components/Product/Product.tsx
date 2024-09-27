@@ -34,7 +34,6 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
   };
   const recursiveReplies = (rep: IReply | null) => {
     if (rep && !rep.replies) {
-
       return (
         <Box sx={{ display: "flex", alignItems: "start", mt: 2, ml: 0 }}>
           <Typography
@@ -85,7 +84,6 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
     }
   };
   return (
-    <Container sx={{ py: 4 }}>
       <Card
         sx={{
           p: 3,
@@ -122,7 +120,14 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
         >
           Category: {product.category.name}
         </Typography>
-        <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            mt: 1,
+            flexWrap: "wrap",
+          }}
+        >
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             Related categories:
           </Typography>
@@ -171,7 +176,6 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
           ))}
         </Box>
       </Card>
-    </Container>
   );
 };
 

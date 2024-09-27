@@ -46,7 +46,7 @@ const Products = ({ products }: { products: IProduct[] }) => {
 
   return (
     <Container sx={{ py: 4 }}>
-      <Grid2 container spacing={3}>
+      <Grid2 container spacing={3} sx={{ mb: 4 }}>
         {products?.map((product) => (
           <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={product.id}>
             <Card
