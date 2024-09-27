@@ -1,14 +1,10 @@
 import { IProduct } from "../types/product";
-import labPro from "/lab-pro-15.jpg"
-import smartWatch from "/smartwatch.jpg"
-import probook from "/probook.png"
-import ultra from "/ultra x.jpg"
 
 export const productsData: IProduct[] = [
   {
     id: 1,
     name: "Laptop Pro 15",
-    image: labPro,
+    image: "/lab-pro-15.jpg",
     category: {
       id: "A1",
       name: "Electronics",
@@ -67,7 +63,7 @@ export const productsData: IProduct[] = [
   {
     id: 2,
     name: "Smartphone Ultra X",
-    image: ultra,
+    image: "/ultra x.jpg",
     category: {
       id: "B1",
       name: "Mobile Devices",
@@ -81,7 +77,8 @@ export const productsData: IProduct[] = [
         },
       },
     },
-    description: "A cutting-edge smartphone with a stunning display and camera.",
+    description:
+      "A cutting-edge smartphone with a stunning display and camera.",
     comments: [
       {
         id: 1,
@@ -132,137 +129,139 @@ export const productsData: IProduct[] = [
     ],
   },
   {
-    "id": 3,
-    "name": "Laptop ProBook 9000",
-      "image": probook,
-    "category": {
-      "id": "A2",
-      "name": "Computers",
-      "subCategory": {
-        "id": "A2-1",
-        "name": "Laptops",
-        "subCategory": {
-          "id": "A2-1-1",
-          "name": "Gaming Laptops",
-          "subCategory": null
-        }
-      }
+    id: 3,
+    name: "Laptop ProBook 9000",
+    image: "/probook.png",
+    category: {
+      id: "A2",
+      name: "Computers",
+      subCategory: {
+        id: "A2-1",
+        name: "Laptops",
+        subCategory: {
+          id: "A2-1-1",
+          name: "Gaming Laptops",
+          subCategory: null,
+        },
+      },
     },
-    "description": "A high-performance gaming laptop with a powerful GPU and fast refresh rate display.",
-    "comments": [
+    description:
+      "A high-performance gaming laptop with a powerful GPU and fast refresh rate display.",
+    comments: [
       {
-        "id": 1,
-        "author": "David Johnson",
-        "content": "The performance is incredible, runs all my games smoothly.",
-        "timestamp": "2024-10-05T16:45:00",
-        "replies": [
+        id: 1,
+        author: "David Johnson",
+        content: "The performance is incredible, runs all my games smoothly.",
+        timestamp: "2024-10-05T16:45:00",
+        replies: [
           {
-            "id": 2,
-            "author": "Sarah Lee",
-            "content": "I agree, the cooling system is also very efficient.",
-            "timestamp": "2024-10-05T17:00:30",
-            "replies": [
+            id: 2,
+            author: "Sarah Lee",
+            content: "I agree, the cooling system is also very efficient.",
+            timestamp: "2024-10-05T17:00:30",
+            replies: [
               {
-                "id": 3,
-                "author": "Chris Evans",
-                "content": "The battery life could be better though.",
-                "timestamp": "2024-10-05T18:00:00",
-                "replies": [
+                id: 3,
+                author: "Chris Evans",
+                content: "The battery life could be better though.",
+                timestamp: "2024-10-05T18:00:00",
+                replies: [
                   {
-                    "id": 4,
-                    "author": "Emma Watson",
-                    "content": "True, but it's a gaming laptop, so expected.",
-                    "timestamp": "2024-10-05T18:30:00",
-                    "replies": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+                    id: 4,
+                    author: "Emma Watson",
+                    content: "True, but it's a gaming laptop, so expected.",
+                    timestamp: "2024-10-05T18:30:00",
+                    replies: [],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
       {
-        "id": 5,
-        "author": "Oliver Queen",
-        "content": "How is the keyboard feel?",
-        "timestamp": "2024-10-06T09:15:12",
-        "replies": [
+        id: 5,
+        author: "Oliver Queen",
+        content: "How is the keyboard feel?",
+        timestamp: "2024-10-06T09:15:12",
+        replies: [
           {
-            "id": 6,
-            "author": "John Doe",
-            "content": "Very comfortable, great for long gaming sessions.",
-            "timestamp": "2024-10-06T10:00:45",
-            "replies": []
-          }
-        ]
-      }
-    ]
+            id: 6,
+            author: "John Doe",
+            content: "Very comfortable, great for long gaming sessions.",
+            timestamp: "2024-10-06T10:00:45",
+            replies: [],
+          },
+        ],
+      },
+    ],
   },
   {
-    "id": 4,
-    "name": "Smartwatch Pulse 3",
-    "image": smartWatch,
-    "category": {
-      "id": "C3",
-      "name": "Wearables",
-      "subCategory": {
-        "id": "C3-1",
-        "name": "Smartwatches",
-        "subCategory": {
-          "id": "C3-1-1",
-          "name": "Fitness Trackers",
-          "subCategory": null
-        }
-      }
+    id: 4,
+    name: "Smartwatch Pulse 3",
+    image: "/smartwatch.jpg",
+    category: {
+      id: "C3",
+      name: "Wearables",
+      subCategory: {
+        id: "C3-1",
+        name: "Smartwatches",
+        subCategory: {
+          id: "C3-1-1",
+          name: "Fitness Trackers",
+          subCategory: null,
+        },
+      },
     },
-    "description": "A sleek smartwatch with advanced health monitoring features and long battery life.",
-    "comments": [
+    description:
+      "A sleek smartwatch with advanced health monitoring features and long battery life.",
+    comments: [
       {
-        "id": 1,
-        "author": "Sophia Martinez",
-        "content": "The heart rate monitor is very accurate.",
-        "timestamp": "2024-11-12T12:30:00",
-        "replies": [
+        id: 1,
+        author: "Sophia Martinez",
+        content: "The heart rate monitor is very accurate.",
+        timestamp: "2024-11-12T12:30:00",
+        replies: [
           {
-            "id": 2,
-            "author": "James Bond",
-            "content": "Yes, and the sleep tracking is impressive too.",
-            "timestamp": "2024-11-12T13:00:30",
-            "replies": [
+            id: 2,
+            author: "James Bond",
+            content: "Yes, and the sleep tracking is impressive too.",
+            timestamp: "2024-11-12T13:00:30",
+            replies: [
               {
-                "id": 3,
-                "author": "Linda Carter",
-                "content": "I wish it had more customizable watch faces.",
-                "timestamp": "2024-11-12T14:00:00",
-                "replies": [
+                id: 3,
+                author: "Linda Carter",
+                content: "I wish it had more customizable watch faces.",
+                timestamp: "2024-11-12T14:00:00",
+                replies: [
                   {
-                    "id": 4,
-                    "author": "Bruce Wayne",
-                    "content": "Agreed, but overall, it's a great device.",
-                    "timestamp": "2024-11-12T14:30:00",
-                    "replies": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+                    id: 4,
+                    author: "Bruce Wayne",
+                    content: "Agreed, but overall, it's a great device.",
+                    timestamp: "2024-11-12T14:30:00",
+                    replies: [],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
       {
-        "id": 5,
-        "author": "Peter Parker",
-        "content": "How is the battery life?",
-        "timestamp": "2024-11-13T08:15:12",
-        "replies": [
+        id: 5,
+        author: "Peter Parker",
+        content: "How is the battery life?",
+        timestamp: "2024-11-13T08:15:12",
+        replies: [
           {
-            "id": 6,
-            "author": "Mary Jane",
-            "content": "Lasts me almost a week on a single charge.",
-            "timestamp": "2024-11-13T09:00:45",
-            "replies": []
-          }
-        ]
-      }
-    ]
-  }
+            id: 6,
+            author: "Mary Jane",
+            content: "Lasts me almost a week on a single charge.",
+            timestamp: "2024-11-13T09:00:45",
+            replies: [],
+          },
+        ],
+      },
+    ],
+  },
 ];
